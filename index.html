@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshare Video Prehrávač</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Webshare Player</h1>
+            <p>Vložte priamy streamovací odkaz na video z Webshare</p>
+        </header>
+
+        <div class="input-group">
+            <input type="url" id="video-url" placeholder="https://vip.webshare.cz/..." required>
+            <button id="play-btn">Prehrať</button>
+        </div>
+
+        <div class="player-wrapper">
+            <video id="video-player" controls preload="metadata">
+                Váš prehliadač nepodporuje HTML5 video.
+            </video>
+        </div>
+        
+        <div id="error-msg" class="error hidden">Neplatný odkaz alebo chyba pri načítaní videa.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
